@@ -1,0 +1,24 @@
+﻿@using MVCBase.ViewModels
+@model P0010ViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TestView2</title>
+</head>
+<body>
+    <div style="color:@Model.msColor"> 
+        TestView2.cshtml is here. Now I am a strongly typed View of P0010ViewModel.<br />
+        P0010ViewModel: <br />
+        ms1 = @Model.ms1 <br />
+        ms2 = @Model.ms2 <br />
+        mi1 = @Model.mi1 <br />
+        mi2 = @Model.mi2.ToString("C") <br />
+        sum = @Model.miSum <br />
+        i2 = @Model.mi1Extra <br /><br />
+    </div>
+</body>
+</html>

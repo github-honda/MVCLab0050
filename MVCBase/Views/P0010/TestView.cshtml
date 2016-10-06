@@ -1,0 +1,26 @@
+﻿@model MVCBase.Models.P0010
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TestView</title>
+</head>
+<body>
+    <div style="color:red">
+        Hi, I am TestView.cshtml. Now I am a strongly typed View of P0010 Model.<br />
+        @{
+            int i2 = (int)ViewBag.i1;
+        }
+        Model P0010: <br />
+        ms1 = @Model.ms1 <br />
+        ms2 = @Model.ms2 <br />
+        mi1 = @Model.mi1 <br />
+        mi2 = @Model.mi2.ToString("C") <br />
+        sum = @(Model.mi1+ Model.mi2) <br />
+        i2 = @i2 <br /><br />
+    </div>
+</body>
+</html>
